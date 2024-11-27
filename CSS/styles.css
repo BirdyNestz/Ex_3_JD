@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+.header {
+  padding: 52px;
+  text-align: center;
+  background: #1abc9c;
+  background-color: aqua;
+  
+}
+h1{
+	font-size: 50px;
+	color: yellow;
+	text-shadow: 4px 3px black;
+	opacity: 0.9;
+	background-position: center;
+}
+
+img {
+    max-width: 100%;
+	filter: drop-shadow(8px 8px 10px gray);
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Knewave", system-ui;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	
+	background-image: url("../img/BeatsOnTheBoard.png");
+	background-size: cover;
+	
+}
+#heroBanner{
+	
+	height: 70px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red , yellow);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+		opacity: 0.9;
+		
+}
+.wrap {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+	font-size: 20px;
+    background-color: #8481ff;
+    min-width: 180px;
+    min-height: 180px;
+    width: 15vw;
+    height: 17vw;
+    margin: 1vw;
+    padding: 25px;
+    border-radius: 10px;
+	color: yellow;
+	text-shadow: 4px 3px black;
+    /* aligns text (and anything else) in the middle of the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: white;
+	text-shadow: 4px 3px black;
+	font-size: 20px;
+    display: inline-block;
+    background-color: #b265a8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.info{
+	font-size: 24px;
+	color:white;
+	background-color: #b265a8;
+    min-width: 180px;
+    min-height: 180px;
+    width: 15vw;
+    height: 0.5vw;
+    margin: 0.5vw;
+    padding: 25px;
+    border-radius: 20px;
+	justify-content: center;
+    /* aligns text (and anything else) in the middle of the box */
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+	
+}
+footer{
+	 background-color: aqua;
+	 opacity: 0.9;
+}
+
+.drive {
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes drive {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 800px){
+	
+	.flex-container{
+		flex-direction: column;
+	}
+	
+}
